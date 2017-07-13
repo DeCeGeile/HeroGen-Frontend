@@ -1,8 +1,41 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{title}}, {{hero.name}}!!
+    Welcome to {{title}}, {{currentHero.name}} the {{currentHero.classType.name}}!!
   </h1>
-  
+  <h2>
+    Your modifiers are: <br>
+    HP:       {{currentHero.classType.hpModifier.value}} <br>
+    MP:       {{currentHero.classType.mpModifier.value}} <br>
+    Damage:   {{currentHero.classType.damageModifier.value}} <br>
+    Defense:  {{currentHero.classType.defenseModifier.value}} <br>
+    Healing:  {{currentHero.classType.healModifier.value}} <br>
+  </h2>
+  <h2>
+    Your skills are: <br>
+    <ul>
+      Primary:
+      <li>{{currentHero.skillset.primaryAbility.name}}</li>
+      <li>{{currentHero.skillset.primaryAbility.abilityType.descriptor}}</li>
+      <li>{{currentHero.skillset.primaryAbility.value}}</li>
+    </ul>
+    <ul>
+      Secondary:
+      <li>{{currentHero.skillset.secondaryAbility.name}}</li>
+      <li>{{currentHero.skillset.secondaryAbility.abilityType.descriptor}}</li>
+      <li>{{currentHero.skillset.secondaryAbility.value}}</li>
+    </ul>
+    <ul>
+      Tertiary:
+      <li>{{currentHero.skillset.tertiaryAbility.name}}</li>
+      <li>{{currentHero.skillset.tertiaryAbility.abilityType.descriptor}}</li>
+      <li>{{currentHero.skillset.tertiaryAbility.value}}</li>
+    </ul>
+    <ul>
+      Quaternary:
+      <li>{{currentHero.skillset.quaternaryAbility.name}}</li>
+      <li>{{currentHero.skillset.quaternaryAbility.abilityType.descriptor}}</li>
+      <li>{{currentHero.skillset.quaternaryAbility.value}}</li>
+    </ul>
+  </h2>
 </div>
-<h2>Here are some links to help you start: </h2>
