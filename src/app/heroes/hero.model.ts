@@ -1,6 +1,7 @@
 import { Skillset } from './skillset.model';
+import { ClassType } from "app/heroes/class-type.model";
 export class Hero {
-    id: number;
     name: string;
     skillset: Skillset;
+    classType: ClassType;
 }
