@@ -7,8 +7,10 @@
     Your modifiers are: <br>
     HP:       {{currentHero.classType.hpModifier.value}} <br>
     MP:       {{currentHero.classType.mpModifier.value}} <br>
-    Damage:   {{currentHero.classType.damageModifier.value}} <br>
+    Physical Damage:   {{currentHero.classType.physicalModifier.value}} <br>
+    Magical Damage: {{currentHero.classType.magicalModifier.value}} <br>
     Defense:  {{currentHero.classType.defenseModifier.value}} <br>
+    Magic Defense: {{currentHero.classType.magicDefenseModifier.value}} <br>
     Healing:  {{currentHero.classType.healModifier.value}} <br>
   </h2>
   <h2>
@@ -16,25 +18,25 @@
     <ul>
       Primary:
       <li>{{currentHero.skillset.primaryAbility.name}}</li>
-      <li>{{currentHero.skillset.primaryAbility.abilityType.descriptor}}</li>
+      <li>{{currentHero.skillset.primaryAbility.abilityType}}</li>
       <li>{{currentHero.skillset.primaryAbility.value}}</li>
     </ul>
     <ul>
       Secondary:
       <li>{{currentHero.skillset.secondaryAbility.name}}</li>
-      <li>{{currentHero.skillset.secondaryAbility.abilityType.descriptor}}</li>
+      <li>{{currentHero.skillset.secondaryAbility.abilityType}}</li>
       <li>{{currentHero.skillset.secondaryAbility.value}}</li>
     </ul>
     <ul>
       Tertiary:
       <li>{{currentHero.skillset.tertiaryAbility.name}}</li>
-      <li>{{currentHero.skillset.tertiaryAbility.abilityType.descriptor}}</li>
+      <li>{{currentHero.skillset.tertiaryAbility.abilityType}}</li>
       <li>{{currentHero.skillset.tertiaryAbility.value}}</li>
     </ul>
     <ul>
       Quaternary:
       <li>{{currentHero.skillset.quaternaryAbility.name}}</li>
-      <li>{{currentHero.skillset.quaternaryAbility.abilityType.descriptor}}</li>
+      <li>{{currentHero.skillset.quaternaryAbility.abilityType}}</li>
       <li>{{currentHero.skillset.quaternaryAbility.value}}</li>
     </ul>
   </h2>
