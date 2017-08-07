@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+ html, body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+.characters {
+    display: flex;
+    background-color:#ccc;
+    text-align: center;
+    font-family: Avenir, sans-serif;
+    font-size: 12px;
+}
+
+.character1 {
+    flex: 50%;
+    border: solid black;
+}
+
+.character2 {
+    flex: 50%;
+    border: solid black;
+}
+
+.character3 {
+    flex: 50%;
+    border: solid black;
+}
+.character4 {
+    flex: 50%;
+    border: solid black;
+}
+.header{
+    display: flex;
+    background-color:#ccc;
+    text-align: center;
+    font-family: Avenir, sans-serif;
+    font-size: 18px;
+    justify-content: center;
+}

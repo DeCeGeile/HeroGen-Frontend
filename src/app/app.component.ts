@@ -13,10 +13,18 @@ import { BaseDataBuilder } from './generation-files/base-data-builder';
 export class AppComponent implements OnInit{
   title = 'Test Application';
   baseDataBuilder:BaseDataBuilder;
-  currentHero:Hero;
+  heroOne:Hero;
+  heroTwo:Hero;
+  heroThree:Hero;
+  heroFour:Hero;
+  
+
 
   ngOnInit() {
     this.baseDataBuilder = new BaseDataBuilder();
-    this.currentHero = this.baseDataBuilder.generateHero();
+    this.heroOne = this.baseDataBuilder.generateHero();
+    this.heroTwo = this.baseDataBuilder.generateHero();
+    this.heroThree = this.baseDataBuilder.generateHero();
+    this.heroFour = this.baseDataBuilder.generateHero();
   }
 }

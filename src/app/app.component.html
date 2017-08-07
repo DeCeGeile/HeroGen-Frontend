@@ -1,41 +1,172 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}, {{currentHero.name}} the {{currentHero.classType.name}}!!
+<div class="characters"> 
+  <h1 class="header">
+    Welcome to Dungeon Hero! Please select a character!
   </h1>
-  <h2>
-    Your modifiers are: <br>
-    HP:       {{currentHero.classType.hpModifier.value}} <br>
-    MP:       {{currentHero.classType.mpModifier.value}} <br>
-    Damage:   {{currentHero.classType.damageModifier.value}} <br>
-    Defense:  {{currentHero.classType.defenseModifier.value}} <br>
-    Healing:  {{currentHero.classType.healModifier.value}} <br>
-  </h2>
-  <h2>
-    Your skills are: <br>
-    <ul>
-      Primary:
-      <li>{{currentHero.skillset.primaryAbility.name}}</li>
-      <li>{{currentHero.skillset.primaryAbility.abilityType.descriptor}}</li>
-      <li>{{currentHero.skillset.primaryAbility.value}}</li>
-    </ul>
-    <ul>
-      Secondary:
-      <li>{{currentHero.skillset.secondaryAbility.name}}</li>
-      <li>{{currentHero.skillset.secondaryAbility.abilityType.descriptor}}</li>
-      <li>{{currentHero.skillset.secondaryAbility.value}}</li>
-    </ul>
-    <ul>
-      Tertiary:
-      <li>{{currentHero.skillset.tertiaryAbility.name}}</li>
-      <li>{{currentHero.skillset.tertiaryAbility.abilityType.descriptor}}</li>
-      <li>{{currentHero.skillset.tertiaryAbility.value}}</li>
-    </ul>
-    <ul>
-      Quaternary:
-      <li>{{currentHero.skillset.quaternaryAbility.name}}</li>
-      <li>{{currentHero.skillset.quaternaryAbility.abilityType.descriptor}}</li>
-      <li>{{currentHero.skillset.quaternaryAbility.value}}</li>
-    </ul>
-  </h2>
+</div>
+<div class="characters">
+  <div class="character1">
+    <h1>
+      {{heroOne.name}} the {{heroOne.classType.name}}!!
+    </h1>
+    <h2>
+      Your modifiers are: <br>
+      HP:       {{heroOne.classType.hpModifier.value}} <br>
+      MP:       {{heroOne.classType.mpModifier.value}} <br>
+      Damage:   {{heroOne.classType.damageModifier.value}} <br>
+      Defense:  {{heroOne.classType.defenseModifier.value}} <br>
+      Healing:  {{heroOne.classType.healModifier.value}} <br>
+    </h2>
+    <h2>
+      Your skills are: <br>
+      <ul>
+        Primary:
+        <li>{{heroOne.skillset.primaryAbility.name}}</li>
+        <li>{{heroOne.skillset.primaryAbility.abilityType.descriptor}}</li>
+        <li>{{heroOne.skillset.primaryAbility.value}}</li>
+      </ul>
+      <ul>
+        Secondary:
+        <li>{{heroOne.skillset.secondaryAbility.name}}</li>
+        <li>{{heroOne.skillset.secondaryAbility.abilityType.descriptor}}</li>
+        <li>{{heroOne.skillset.secondaryAbility.value}}</li>
+      </ul>
+      <ul>
+        Tertiary:
+        <li>{{heroOne.skillset.tertiaryAbility.name}}</li>
+        <li>{{heroOne.skillset.tertiaryAbility.abilityType.descriptor}}</li>
+        <li>{{heroOne.skillset.tertiaryAbility.value}}</li>
+      </ul>
+      <ul>
+        Quaternary:
+        <li>{{heroOne.skillset.quaternaryAbility.name}}</li>
+        <li>{{heroOne.skillset.quaternaryAbility.abilityType.descriptor}}</li>
+        <li>{{heroOne.skillset.quaternaryAbility.value}}</li>
+      </ul>
+    </h2>
+  </div>
+
+  <div class="character2">
+    <h1>
+    {{heroTwo.name}} the {{heroTwo.classType.name}}!!
+    </h1>
+    <h2>
+      Your modifiers are: <br>
+      HP:       {{heroTwo.classType.hpModifier.value}} <br>
+      MP:       {{heroTwo.classType.mpModifier.value}} <br>
+      Damage:   {{heroTwo.classType.damageModifier.value}} <br>
+      Defense:  {{heroTwo.classType.defenseModifier.value}} <br>
+      Healing:  {{heroTwo.classType.healModifier.value}} <br>
+    </h2>
+    <h2>
+      Your skills are: <br>
+      <ul>
+        Primary:
+        <li>{{heroTwo.skillset.primaryAbility.name}}</li>
+        <li>{{heroTwo.skillset.primaryAbility.abilityType.descriptor}}</li>
+        <li>{{heroTwo.skillset.primaryAbility.value}}</li>
+      </ul>
+      <ul>
+        Secondary:
+        <li>{{heroTwo.skillset.secondaryAbility.name}}</li>
+        <li>{{heroTwo.skillset.secondaryAbility.abilityType.descriptor}}</li>
+        <li>{{heroTwo.skillset.secondaryAbility.value}}</li>
+      </ul>
+      <ul>
+        Tertiary:
+        <li>{{heroTwo.skillset.tertiaryAbility.name}}</li>
+        <li>{{heroTwo.skillset.tertiaryAbility.abilityType.descriptor}}</li>
+        <li>{{heroTwo.skillset.tertiaryAbility.value}}</li>
+      </ul>
+      <ul>
+        Quaternary:
+        <li>{{heroTwo.skillset.quaternaryAbility.name}}</li>
+        <li>{{heroTwo.skillset.quaternaryAbility.abilityType.descriptor}}</li>
+        <li>{{heroTwo.skillset.quaternaryAbility.value}}</li>
+      </ul>
+    </h2>
+  </div>
+</div>
+
+<div class="characters">
+  <div class="character3">
+    <h1>
+      {{heroThree.name}} the {{heroThree.classType.name}}!!
+    </h1>
+    <h2>
+      Your modifiers are: <br>
+      HP:       {{heroThree.classType.hpModifier.value}} <br>
+      MP:       {{heroThree.classType.mpModifier.value}} <br>
+      Damage:   {{heroThree.classType.damageModifier.value}} <br>
+      Defense:  {{heroThree.classType.defenseModifier.value}} <br>
+      Healing:  {{heroThree.classType.healModifier.value}} <br>
+    </h2>
+    <h2>
+      Your skills are: <br>
+      <ul>
+        Primary:
+        <li>{{heroThree.skillset.primaryAbility.name}}</li>
+        <li>{{heroThree.skillset.primaryAbility.abilityType.descriptor}}</li>
+        <li>{{heroThree.skillset.primaryAbility.value}}</li>
+      </ul>
+      <ul>
+        Secondary:
+        <li>{{heroThree.skillset.secondaryAbility.name}}</li>
+        <li>{{heroThree.skillset.secondaryAbility.abilityType.descriptor}}</li>
+        <li>{{heroThree.skillset.secondaryAbility.value}}</li>
+      </ul>
+      <ul>
+        Tertiary:
+        <li>{{heroThree.skillset.tertiaryAbility.name}}</li>
+        <li>{{heroThree.skillset.tertiaryAbility.abilityType.descriptor}}</li>
+        <li>{{heroThree.skillset.tertiaryAbility.value}}</li>
+      </ul>
+      <ul>
+        Quaternary:
+        <li>{{heroThree.skillset.quaternaryAbility.name}}</li>
+        <li>{{heroThree.skillset.quaternaryAbility.abilityType.descriptor}}</li>
+        <li>{{heroThree.skillset.quaternaryAbility.value}}</li>
+      </ul>
+    </h2>
+  </div>
+
+  <div class="character4">
+    <h1>
+    {{heroFour.name}} the {{heroFour.classType.name}}!!
+    </h1>
+    <h2>
+      Your modifiers are: <br>
+      HP:       {{heroFour.classType.hpModifier.value}} <br>
+      MP:       {{heroFour.classType.mpModifier.value}} <br>
+      Damage:   {{heroFour.classType.damageModifier.value}} <br>
+      Defense:  {{heroFour.classType.defenseModifier.value}} <br>
+      Healing:  {{heroFour.classType.healModifier.value}} <br>
+    </h2>
+    <h2>
+      Your skills are: <br>
+      <ul>
+        Primary:
+        <li>{{heroFour.skillset.primaryAbility.name}}</li>
+        <li>{{heroFour.skillset.primaryAbility.abilityType.descriptor}}</li>
+        <li>{{heroFour.skillset.primaryAbility.value}}</li>
+      </ul>
+      <ul>
+        Secondary:
+        <li>{{heroFour.skillset.secondaryAbility.name}}</li>
+        <li>{{heroFour.skillset.secondaryAbility.abilityType.descriptor}}</li>
+        <li>{{heroFour.skillset.secondaryAbility.value}}</li>
+      </ul>
+      <ul>
+        Tertiary:
+        <li>{{heroFour.skillset.tertiaryAbility.name}}</li>
+        <li>{{heroFour.skillset.tertiaryAbility.abilityType.descriptor}}</li>
+        <li>{{heroFour.skillset.tertiaryAbility.value}}</li>
+      </ul>
+      <ul>
+        Quaternary:
+        <li>{{heroFour.skillset.quaternaryAbility.name}}</li>
+        <li>{{heroFour.skillset.quaternaryAbility.abilityType.descriptor}}</li>
+        <li>{{heroFour.skillset.quaternaryAbility.value}}</li>
+      </ul>
+    </h2>
+  </div>
 </div>
