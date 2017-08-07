@@ -1,55 +1,88 @@
- 
-html, body{
-        width: 100%;
-        height: 100%;
-        margin: 0;
-      }
+ html,
+ body {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+ }
 
-.characters {
-    /* display: flex;
+ .characters {
+   /* display: flex;
     background-color:#ccc;
     text-align: center;
     font-family: Avenir, sans-serif;
     font-size: 12px;  */
-    display: flex;
+   display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
-   
-}
- 
-.character {
-    flex: 0 1 24%;
-    border: solid black;
-    background-color:#ccc;
-    font-size: 12px;
-    font-family: Avenir, sans-serif;
-}
+ }
 
-.character1 {
-    flex: 50%;
-    border: solid black;
-}
+ .character {
+   flex: 0 1 24%;
+   border: solid black;
+   background-color: #ccc;
+   font-size: 12px;
+   font-family: Avenir, sans-serif;
+   border-radius: 4px;
+ }
 
-.character2 {
-    flex: 50%;
-    border: solid black;
-}
+ .character:hover {
+   background-color: #cce
+ }
 
-.character3 {
-    flex: 50%;
-    border: solid black;
-}
+ .header {
+   display: flex;
+   text-align: center;
+   font-family: Avenir, sans-serif;
+   font-size: 18px;
+   justify-content: space-between;
+   flex-direction: row;
+   padding-right: 20px;
+   margin-left: 33%;
+ }
 
-.character4 {
-    flex: 50%;
-    border: solid black;
-}
+ .rerollButton {
+   display: flex;
+   background-color: red;
+   color: black;
+   border: 2px solid black;
+   border-radius: 4px;
 
-.header{
-    display: flex;
-    text-align: center;
-    font-family: Avenir, sans-serif;
-    font-size: 18px;
-    justify-content: center;
-}
+ }
 
+ .rerollButton:hover {
+   background-color: #4CAF50;
+   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ .combatContainer {
+   height: 100%;
+   display: flex;
+   display: -webkit-flex;
+   flex-direction: row;
+   -webkit-flex-direction: row;
+   -webkit-align-content: stretch;
+   align-content: stretch;
+ }
+
+ .combatSidebar {
+   background: hotpink;
+   width: 100px;
+ }
+
+ .combatChild {
+   background-color: steelblue;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+ }
+
+ .combatMain {
+   background-color: red;
+   -webkit-flex: 1;
+   flex: 1;
+   position: relative;
+ }
+
+ .scrollable {
+   overflow-y: auto;
+ }
