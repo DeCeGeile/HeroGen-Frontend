@@ -14,6 +14,7 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
+   padding: 5px;
  }
 
  .character {
@@ -46,7 +47,6 @@
    color: black;
    border: 2px solid black;
    border-radius: 4px;
-
  }
 
  .rerollButton:hover {
@@ -55,34 +55,77 @@
  }
 
  .combatContainer {
-   height: 100%;
    display: flex;
-   display: -webkit-flex;
-   flex-direction: row;
-   -webkit-flex-direction: row;
-   -webkit-align-content: stretch;
-   align-content: stretch;
+   min-height: 100vh;
+   flex-direction: column;
  }
 
- .combatSidebar {
-   background: hotpink;
-   width: 100px;
- }
-
- .combatChild {
-   background-color: steelblue;
-   position: absolute;
-   width: 100%;
-   height: 100%;
- }
-
- .combatMain {
-   background-color: red;
-   -webkit-flex: 1;
+ .combatBody {
+   display: flex;
    flex: 1;
-   position: relative;
+   background-color: black;
  }
 
- .scrollable {
-   overflow-y: auto;
+ .combatContent {
+   flex: 1;
+ }
+
+ .combatNav,
+ .combatAside {
+   /* 12em is the width of the columns */
+   display: flex;
+   flex: 0 0 12em;
+   background-color: #5D4C59;
+   border: solid gray 4px;
+   border-radius: 4px;
+   flex-direction: column;
+   padding:15px;
+   margin: 15px;
+ }
+
+ .combatNav {
+   /* put the nav on the left */
+   order: -1;
+   background-color: #ECB1C9;
+ }
+
+ .combatContainer,
+ .combatBody {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .combatNav {
+   order: -1;
+ }
+
+ @media (min-width: 768px) {
+   .combatBody {
+     flex-direction: row;
+     flex: 1;
+   }
+   .combatContent {
+     flex: 1;
+     background-color: black;
+     color: white;
+     border: solid white 4px;
+     border-radius: 4px;
+   }
+   .combatNav {
+     /* 12em is the width of the columns */
+     flex: 0 0 12em;
+   }
+ }
+
+ .attackButton {
+   display: flex;
+   background-color: red;
+   color: black;
+   border: 2px solid black;
+   border-radius: 4px;
+ }
+
+ .attackButton:hover {
+   background-color: #4CAF50;
+   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
  }
