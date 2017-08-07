@@ -1,10 +1,12 @@
-<div class="characters"> 
+
   <h1 class="header">
     Welcome to Dungeon Hero! Please select a character!
   </h1>
-</div>
-<div class="characters">
-  <div class="character1">
+
+
+  <div class="centered">
+    <section class="characters">
+  <article class="character">
     <h1>
       {{heroOne.name}} the {{heroOne.classType.name}}!!
     </h1>
@@ -45,9 +47,9 @@
       <li>{{heroOne.skillset.quaternaryAbility.value}}</li>
     </ul>
   </h2>
-  </div>
+  </article>
 
-  <div class="character2">
+  <article class="character">
     <h1>
     {{heroTwo.name}} the {{heroTwo.classType.name}}!!
     </h1>
@@ -88,11 +90,9 @@
       <li>{{heroTwo.skillset.quaternaryAbility.value}}</li>
     </ul>
   </h2>
-  </div>
-</div>
+  </article>
 
-<div class="characters">
-  <div class="character3">
+  <article class="character">
     <h1>
       {{heroThree.name}} the {{heroThree.classType.name}}!!
     </h1>
@@ -133,9 +133,9 @@
       <li>{{heroThree.skillset.quaternaryAbility.value}}</li>
     </ul>
   </h2>
-  </div>
+  </article>
 
-  <div class="character4">
+  <article class="character">
     <h1>
     {{heroFour.name}} the {{heroFour.classType.name}}!!
     </h1>
@@ -176,4 +176,6 @@
       <li>{{heroFour.skillset.quaternaryAbility.value}}</li>
     </ul>
   </h2>
-  </div>
+  </article>
+</section>
+</div>

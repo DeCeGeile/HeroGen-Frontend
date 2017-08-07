@@ -1,15 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
- html, body{
+ 
+html, body{
         width: 100%;
         height: 100%;
         margin: 0;
       }
+
 .characters {
-    display: flex;
+    /* display: flex;
     background-color:#ccc;
     text-align: center;
     font-family: Avenir, sans-serif;
+    font-size: 12px;  */
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   
+}
+ 
+.character {
+    flex: 0 1 24%;
+    border: solid black;
+    background-color:#ccc;
     font-size: 12px;
+    font-family: Avenir, sans-serif;
 }
 
 .character1 {
@@ -26,15 +39,17 @@
     flex: 50%;
     border: solid black;
 }
+
 .character4 {
     flex: 50%;
     border: solid black;
 }
+
 .header{
     display: flex;
-    background-color:#ccc;
     text-align: center;
     font-family: Avenir, sans-serif;
     font-size: 18px;
     justify-content: center;
 }
+
