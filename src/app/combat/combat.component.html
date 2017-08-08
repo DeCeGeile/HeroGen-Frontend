@@ -3,11 +3,17 @@
     <nav class="combatNav">nav</nav>
     <main class="combatContent">You are entering a zone of danger.</main>
     <aside class="combatAside">
-      Character Sheet
-      <button class="attackButton">Attack1</button>
-      <button class="attackButton">Attack2</button>
-      <button class="attackButton">Attack3</button>
-      <button class="attackButton">Attack4</button>
+      <div class="navBox">
+        <a class="characterSheetLink" (click)="toCharacterSheet()">Character Sheet</a>
+      </div>
+      <div class="navBox">
+        <a class="characterSheetLink"> Skills </a>
+        <button class="attackButton">Attack1</button>
+        <button class="attackButton" target="magic">Attack2</button>
+        <button class="attackButton" target="healing">Attack3</button>
+        <button class="attackButton">Attack4</button>
+        <button class="attackButton" (click)="goodnightSweetPrince()">Seppuku</button>
+      </div>
     </aside>
   </div>
 </body>

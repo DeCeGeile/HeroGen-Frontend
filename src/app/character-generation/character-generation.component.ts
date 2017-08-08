@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Hero } from '../heroes/hero.model';
 import { AbilityType } from '../heroes/ability-type.model';
 import { BaseDataBuilder } from '../generation-files/base-data-builder';
@@ -9,6 +9,7 @@ import { Router, RouterModule } from '@angular/router';
   templateUrl: './character-generation.component.html',
   styleUrls: ['./character-generation.component.css']
 })
+
 export class CharacterGenerationComponent implements OnInit {
 constructor(private RouterModule: Router){ }
   title = 'Test Application';
@@ -17,7 +18,10 @@ constructor(private RouterModule: Router){ }
   heroTwo:Hero;
   heroThree:Hero;
   heroFour:Hero;
+  @Output() currentHero: EventEmitter<Hero> = new EventEmitter<Hero>();
   
+ 
+
   ngOnInit() {
     this.baseDataBuilder = new BaseDataBuilder();
     this.heroOne = this.baseDataBuilder.generateHero();
@@ -35,6 +39,7 @@ constructor(private RouterModule: Router){ }
 
   toCombat(){
     //TODO: save character in backend
+    this.currentHero.emit(this.heroOne);
     this.RouterModule.navigate(['./combat']);
   }
 

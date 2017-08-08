@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
+import { Hero } from "app/heroes/hero.model";
+
 
 @Component({
   templateUrl: './combat.component.html',
@@ -7,9 +9,21 @@ import { Router, RouterModule } from '@angular/router';
 })
 export class CombatComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private RouterModule: Router) { }
+
+  @Input() currentHero: Hero;
+  primaryAttack: string
 
   ngOnInit() {
+    this.primaryAttack = this.currentHero.skillset.primaryAbility.name
+  }
+
+  toCharacterSheet(){
+    this.RouterModule.navigate(['./characterSheet']);
+  }
+
+  goodnightSweetPrince(){
+    this.RouterModule.navigate(['']);
   }
 
 }

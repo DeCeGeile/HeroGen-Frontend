@@ -5,6 +5,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { CombatComponent } from "../combat/combat.component"
 import { AppComponent } from "../app.component"
 import { CharacterGenerationComponent } from "../character-generation/character-generation.component"
+import { CharacterSheetComponent } from "../character-sheet/character-sheet.component"
 
 @NgModule({
   imports: [
@@ -20,7 +21,11 @@ import { CharacterGenerationComponent } from "../character-generation/character-
     {
         path: "",
         component: CharacterGenerationComponent
-    }
+    },
+      {
+        path: 'characterSheet',
+        component: CharacterSheetComponent
+      }
     ])
   ],
   exports: [
