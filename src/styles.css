@@ -136,14 +136,22 @@
 
  .attackButton[target=physical] {
    background-color: darkred;
+   /* border-radius: 50px 0px 50px 0px; */
  }
 
  .attackButton[target=magic] {
    background-color: blue;
+   /* border-radius: 0px 200px 200px 200px; */
  }
 
  .attackButton[target=healing] {
    background-color: green;
+   /* border-radius: 58px 57px 200px 200px; */
+ }
+  
+ .attackButton[target=seppuku]{
+  background-color: purple; 
+  /* border-radius: 200px 200px 200px 200px; */
  }
 
  .attackButton:hover {
