@@ -148,10 +148,10 @@
    background-color: green;
    /* border-radius: 58px 57px 200px 200px; */
  }
-  
- .attackButton[target=seppuku]{
-  background-color: purple; 
-  /* border-radius: 200px 200px 200px 200px; */
+
+ .attackButton[target=seppuku] {
+   background-color: purple;
+   /* border-radius: 200px 200px 200px 200px; */
  }
 
  .attackButton:hover {
@@ -159,6 +159,13 @@
    cursor: pointer;
    opacity: 0.5;
    border-color: white;
+ }
+
+ .plainText {
+   display: flex;
+   margin: 8px;
+   color: white;
+   text-align: center;
  }
 
  .characterSheetLink {
